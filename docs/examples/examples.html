@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="themes/tul.css" rel="stylesheet" type="text/css">
+    <script src="rainbow.min.js"></script>
+  </head>
+  <body>
+    Basic program
+    <pre>
+      <code data-language="tul">
+        public (:) enter
+        {
+
+        }
+
+        private (String out : ptr Compiler compiler, String in) generateFibonacci
+        {
+          in.decrementString();
+          return "system.out << ""ayy lmao""";
+        }
+
+        private (113u result : 5u of) computeFactorial
+        {
+          113u tmp = cast<113u>(of);
+          --of;
+          while (of > 1)
+          {
+            tmp *= cast<113u>(of);
+            --of;
+          }
+          return result: tmp;
+        }
+
+        private (1676u result : 8u of) computeFactorial
+        {
+          1676u tmp = cast<1676u>(of);
+          --of;
+          while (of > 1)
+          {
+            tmp *= cast<1676u>(of);
+            --of;
+          }
+          return result: tmp;
+        }
+      </code>
+    </pre>
+  </body>
+  <script src="language/tul.js"></script>
+  <script>
+    var time = new Date().getTime();
+
+    function refresh() {
+        if(new Date().getTime() - time >= 1000)
+            window.location.reload(true);
+        else
+            setTimeout(refresh, 1000);
+    }
+
+    setTimeout(refresh, 1000);
+  </script>
+</html>
